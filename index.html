@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colégio Estadual Ayrton Senna da Silva</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo Ayrton Senna da Silva">
+                <span>Ayrton Senna da Silva</span>
+            </div>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="pesquisa">
+                <input 
+                    type="text" 
+                    id="campoPesquisa"
+                    placeholder="Pesquisar..."
+                >
+                <button onclick="pesquisar()"></button>
+            </div>
+        </nav>
+    </header>
+    <section id="inicio" class="inicio">
+        <div class="inicio-texto">
+            <p class="pequeno-titulo">
+                COLÉGIO ESTADUAL
+            </p>
+            <h1>
+                Ayrton Senna<br>
+                da Silva
+            </h1>
+            <p>
+                Educação, conhecimento e preparação
+                para o futuro.
+            </p>
+            <a href="#sobre" class="botao">
+                Conheça nossa escola
+            </a>
+        </div>
+        <div class="inicio-logo">
+            <img src="logo.png" alt="Logo da escola">
+        </div>
+    </section>
+    <section id="sobre" class="secao">
+        <h2>Sobre a instituição</h2>
+        <div class="linha"></div>
+        <p>
+            O Colégio Estadual Ayrton Senna da Silva é uma instituição
+            de ensino voltada para a formação acadêmica e profissional
+            dos estudantes, oferecendo diferentes possibilidades de
+            aprendizado no Ensino Médio.
+        </p>
+        <p>
+            A escola busca proporcionar um ambiente de conhecimento,
+            desenvolvimento e preparação dos alunos para os desafios
+            do futuro, tanto no mercado de trabalho quanto na
+            continuidade dos estudos.
+        </p>
+    </section>
+    <section id="cursos" class="secao cursos">
+        <h2>Ensino Médio</h2>
+        <div class="linha"></div>
+        <p class="subtitulo">
+            Conheça as modalidades oferecidas pela instituição.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <div class="icone"></div>
+                <h3>NEM</h3>
+                <h4>Normal</h4>
+                <p>
+                    Ensino Médio com formação geral,
+                    preparando o estudante para a continuidade
+                    dos estudos e para diferentes caminhos profissionais.
+                </p>
+                <button onclick="mostrarCurso('NEM - Normal')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="card destaque">
+                <div class="icone"></div>
+                <h3>DES</h3>
+                <h4>Desenvolvimento de Sistemas</h4>
+                <p>
+                    Formação voltada à tecnologia, programação,
+                    desenvolvimento de sistemas e conhecimentos
+                    relacionados à área de informática.
+                </p>
+                <button onclick="mostrarCurso('DES - Desenvolvimento de Sistemas')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="card">
+                <div class="icone"></div>
+                <h3>ADM</h3>
+                <h4>Administração</h4>
+                <p>
+                    Formação voltada aos conhecimentos de
+                    administração, organização, gestão e
+                    funcionamento das empresas.
+                </p>
+                <button onclick="mostrarCurso('ADM - Administração')">
+                    Saiba mais
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="secao contato">
+        <h2>Entre em contato</h2>
+        <div class="linha"></div>
+        <div class="contato-container">
+            <div class="informacoes">
+                <h3>Fale conosco</h3>
+                <p>
+                    📍 Endereço: Rua Poços de Caldas, 54 – Jardim Lancaster
+                </p>
+                <p>
+                    ☎ Telefone: (45) 3524-4277
+                </p>
+                <p>
+                    ✉ E-mail: fozayrtonsenna@seed.pr.gov.br
+                </p>
+            </div>
+            <form id="formularioContato">
+                <input 
+                    type="text" 
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                >
+                <input 
+                    type="email" 
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                >
+                <textarea
+                    id="mensagem"
+                    placeholder="Digite sua mensagem"
+                    required
+                ></textarea>
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>
+            © 2026 Colégio Estadual Ayrton Senna da Silva
+        </p>
+        <p>
+            Educação para transformar o futuro.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

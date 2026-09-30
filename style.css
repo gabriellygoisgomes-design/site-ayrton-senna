@@ -1,0 +1,483 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f7;
+    color: #102d55;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 25px;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo-area img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #102d55;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f2b900;
+}
+
+.pesquisa {
+    display: flex;
+}
+
+.pesquisa input {
+    width: 150px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+
+    outline: none;
+}
+
+.pesquisa button {
+    border: none;
+
+    background-color: #102d55;
+    color: white;
+
+    padding: 0 13px;
+
+    border-radius: 0 20px 20px 0;
+
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #f2b900;
+    color: #102d55;
+}
+.inicio {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 60px 40px;
+}
+
+.inicio-texto {
+    max-width: 600px;
+}
+
+.pequeno-titulo {
+    color: #f2b900;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.inicio h1 {
+    font-size: 65px;
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.inicio p {
+    font-size: 19px;
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.inicio-logo img {
+    width: 420px;
+
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.12));
+}
+
+.botao {
+    display: inline-block;
+
+    background-color: #102d55;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #f2b900;
+    color: #102d55;
+
+    transform: translateY(-2px);
+}
+
+.secao {
+    padding: 90px 40px;
+
+    max-width: 1200px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.linha {
+    width: 60px;
+    height: 4px;
+
+    background-color: #f2b900;
+
+    margin: 0 auto 30px;
+}
+
+.secao > p {
+    max-width: 850px;
+
+    margin: 15px auto;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+.cursos {
+    max-width: 1300px;
+}
+
+.subtitulo {
+    margin-bottom: 40px !important;
+}
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+
+    width: 330px;
+
+    min-height: 370px;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card.destaque {
+    border-top: 5px solid #f2b900;
+}
+
+.icone {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 32px;
+
+    color: #102d55;
+}
+
+.card h4 {
+    font-size: 19px;
+
+    margin: 8px 0 15px;
+}
+
+.card p {
+    line-height: 1.6;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+.card button {
+    border: none;
+
+    background-color: #102d55;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #f2b900;
+    color: #102d55;
+}
+.contato-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    text-align: left;
+
+    margin-top: 40px;
+}
+
+.informacoes {
+    width: 400px;
+}
+
+.informacoes h3 {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+.informacoes p {
+    margin: 18px 0;
+
+    line-height: 1.5;
+}
+
+form {
+    width: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+form textarea {
+    height: 130px;
+
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #102d55;
+}
+
+form button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #102d55;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f2b900;
+
+    color: #102d55;
+}
+
+footer {
+    background-color: #102d55;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer img {
+    width: 80px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+
+        height: auto;
+
+        padding: 15px;
+    }
+
+    .menu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin-top: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 45px;
+    }
+
+    .inicio-logo img {
+        width: 300px;
+
+        margin-top: 40px;
+    }
+
+    .contato-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .informacoes,
+    form {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .logo-area span {
+        display: none;
+    }
+
+    .menu {
+        gap: 12px;
+
+        font-size: 14px;
+    }
+
+    .pesquisa input {
+        width: 110px;
+    }
+
+    .inicio {
+        padding: 50px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 38px;
+    }
+
+    .secao {
+        padding: 60px 20px;
+    }
+
+}
